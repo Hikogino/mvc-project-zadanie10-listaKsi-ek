@@ -12,6 +12,7 @@
                     <th>Genre</th>
                     <th>Year</th>
                     <th>Notes</th>
+                    <th>Read</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -23,6 +24,11 @@
                         <td><%= book.genre %></td>
                         <td><%= book.year %></td>
                         <td><%= book.notes %></td>
+                        <td>
+                            <form action="/read/<%= book._id %>" method="post">
+                                <input type="checkbox" name="read" onchange="this.form.submit()" <%= book.read ? 'checked' : '' %>>
+                            </form>
+                        </td>
                         <td>
                             <a href="/change/<%= book.id %>" class="btn btn-primary btn-sm">
                                 <i class="fas fa-edit"></i> Change
