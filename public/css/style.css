@@ -1,28 +1,27 @@
-/* Подключение шрифта Merriweather */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #e9f5e9; /* Бледно-зеленый фон */
-    color: #204020; /* Тёмно-зелёный текст */
-    line-height: 1.6; /* Увеличиваем межстрочный интервал для читаемости */
+    background-color: #e9f5e9;
+    color: #204020; 
+    line-height: 1.6; 
 }
 
 h1 {
-    color: #27632a; /* Цвет заголовков */
-    text-align: center; /* Заголовок по центру */
-    margin-bottom: 20px; /* Отступ снизу */
+    color: #27632a; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .navbar {
-    background-color: #387d3b !important; /* Зелёный цвет для навигационного меню */
-    padding: 10px 0; /* Отступы вокруг меню */
+    background-color: #387d3b !important; 
+    padding: 10px 0;
 }
 
 .navbar-light .navbar-brand,
 .navbar-light .nav-link {
-    color: #ffffff !important; /* Белый цвет текста */
-    font-size: 18px; /* Увеличенный размер текста */
+    color: #ffffff !important;
+    font-size: 18px; 
 }
 
 .navbar-light .navbar-toggler {
@@ -30,22 +29,18 @@ h1 {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
 .table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #e9f5e9; /* Фон как у страницы */
+    background-color: #e9f5e9; 
     border: 1px solid #c3e6cb;
 }
 
 th, td {
     padding: 12px 15px;
-    text-align: center; /* Выравнивание текста по центру */
-    border-bottom: 1px solid #c3e6cb; /* Светлые линии для разделения */
+    text-align: center; 
+    border-bottom: 1px solid #c3e6cb; 
 }
 
 .btn {
