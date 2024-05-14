@@ -4,6 +4,7 @@ const bookRouter = express.Router();
 const bookControllers = require('../controllers/bookControllers');
 
 bookRouter.get('/', bookControllers.getBooks);
+bookRouter.post('/read/:id', bookControllers.Read);
 
 bookRouter.get('/create', bookControllers.getCreate);
 bookRouter.post('/create', bookControllers.postCreate);
@@ -15,5 +16,4 @@ bookRouter.put('/change/:id', bookControllers.putChange);
 
 
 module.exports = bookRouter;
-
 
