@@ -1,7 +1,9 @@
 Tytuł i nazwa wybranego projektu
+
 Zadanie 10 - System zarządzania listą zadań do przeczytania
 
 Spis tresći
+
 Projekt polega na utworzeniu aplikacji, która umożliwi użytkownikom tworzenie i zarządzanie listą książek do przeczytania. Użytkownicy mogą dodać nowe pozycje do listy, oznzaczać książki jako przeczytane oraz uzuwać z listy.
 Struktura projektu MVC:
 -Modekl(models): definicja modelu pozycji do przeczytania
