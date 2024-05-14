@@ -21,7 +21,11 @@ const BookSchema = new Schema ({
    notes: { 
     type: String, 
     default: '' 
-   }
+   },
+   read: { 
+      type: Boolean,
+      default: false 
+  }
 })
 
 module.exports = model('book', BookSchema)
