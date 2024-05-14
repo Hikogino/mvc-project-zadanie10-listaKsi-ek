@@ -14,6 +14,19 @@ exports.getBooks = async (req, res) => {
     }
 };
 
+exports.Read = async (req, res) => {
+    const bookId = req.params.id;
+    const readStatus = req.body.read === 'on';
+
+    try {
+        await Book.findByIdAndUpdate(bookId, { read: readStatus });
+        res.redirect('/');
+    } catch (e) {
+        res.status(500).send(e);
+    }
+};
+
+
 exports.getCreate = (req, res) => {
     res.render('create', {
         title: 'Add Books',
