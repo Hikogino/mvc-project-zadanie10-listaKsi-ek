@@ -18,10 +18,6 @@ const BookSchema = new Schema ({
     type: Number, 
     required: true 
    },
-   Read: {
-    type: Boolean,
-    default: false
-   },
    notes: { 
     type: String, 
     default: '' 

@@ -1,25 +1,77 @@
-/* Увеличиваем специфичность, добавляя более конкретные селекторы */
-body .books {
-    margin-bottom: 1rem;
+/* Подключение шрифта Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #e9f5e9; /* Бледно-зеленый фон */
+    color: #204020; /* Тёмно-зелёный текст */
+    line-height: 1.6; /* Увеличиваем межстрочный интервал для читаемости */
 }
 
-body .books span.completed {
-    text-decoration-line: line-through;
+h1 {
+    color: #27632a; /* Цвет заголовков */
+    text-align: center; /* Заголовок по центру */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
-body .books label {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Изменил на space-between для более равномерного распределения содержимого */
+.navbar {
+    background-color: #387d3b !important; /* Зелёный цвет для навигационного меню */
+    padding: 10px 0; /* Отступы вокруг меню */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+    color: #ffffff !important; /* Белый цвет текста */
+    font-size: 18px; /* Увеличенный размер текста */
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #e9f5e9; /* Фон как у страницы */
+    border: 1px solid #c3e6cb;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center; /* Выравнивание текста по центру */
+    border-bottom: 1px solid #c3e6cb; /* Светлые линии для разделения */
+}
+
+.btn {
+    font-size: 16px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
     cursor: pointer;
-    background: #f3f3f3;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Добавил тень для визуального выделения */
-    border-radius: 5px; /* Скругление углов для современного вида */
+    transition: background-color 0.3s;
 }
 
-body .books i {
-    z-index: 2;
-    margin-left: auto; /* Это поможет иконке выровняться по правому краю внутри label */
+.btn-primary {
+    background-color: #4caf50;
 }
+
+.btn-primary:hover {
+    background-color: #27632a;
+}
+
+.btn-danger {
+    background-color: #da1e28;
+}
+
+.btn-danger:hover {
+    background-color: #b22222;
+}
+
+
+
