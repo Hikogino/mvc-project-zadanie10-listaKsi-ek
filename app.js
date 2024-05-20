@@ -17,7 +17,8 @@ const DB_NAME = process.env.DB_NAME
 async function start() {
     try {
       await mongoose.connect(
-        `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster.btuosaf.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&appName=Cluster`
+        `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.ajobvj9.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
+        
       )
       app.listen(PORT, () => {
         console.log(`Server started on ${PORT}`);
